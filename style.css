@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", Helvetica, sans-serif;
+    background-color: rgb(39, 175, 187);
+    font-size: 18px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg {
+    position: absolute;
+    width: 200%;
+    height: 150%;
+}
+
+.bg-top {
+    top: -160%;
+    left: -250%;
+    transform: translate(50%, 50%);
+    background: url(images/background-top.svg) no-repeat right bottom;
+}
+
+.bg-bottom {
+    bottom: -175%;
+    right: -40%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    background: url(images/background-bottom.svg) no-repeat left top;
+}
+
+.card {
+    height: 375px;
+    width: 350px;
+    max-width: 90%;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 100px 1px rgb(103, 107, 126);
+    color: rgb(39, 43, 63);
+}
+
+.card-top {
+    position: relative;
+    background: url(images/background-pattern.svg) no-repeat center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 284px;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.user-details {
+    position: absolute;
+    top: 75%;
+    font-weight: 700;
+}
+
+.user-details span {
+    font-weight: 400;
+    color: rgb(103, 107, 126);
+}
+
+.user-location {
+    position: absolute;
+    top: 85%;
+    color: rgb(103, 107, 126);
+}
+
+.card-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+}
+
+.socials p {
+    text-align: center;
+    font-weight: 700;
+}
+
+.socials span {
+    margin-top: 0.25rem;
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgb(103, 107, 126);
+
+    @media only screen and (max-width: 425px) {
+        .bg-bottom {
+            bottom: -185%;
+            right: -40%;
+            width: 70%;
+            height: 160%;
+        }
+    }
+}
